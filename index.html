@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+      <nav id="NavBar">
+    <div class="nav-left">
+      <h1 class="logo">Subhajit</h1>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#about-me">About</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="assets/Subhajit-CV.pdf" target="_blank" class="cv-button">Resume</a>
+      <button id="toggleMode" class="btn toggle-mode">🌙 Light Mode</button>
+    </div>
+  </nav>
+
+    <section id="Herosection">
+        <p class="fade-in">Hello, I am</p>
+        <h1 class="slide-in">Subhajit</h1>
+        <ul class="socials fade-in">
+            <li><a href="https://www.linkedin.com/in/subhajit-cmd/">LinkedIn</a></li>
+            <li><a href="https://x.com/subhajit_cmd">X (Twitter)</a></li>
+            <li><a href="https://github.com/subhajit-cmd">GitHub</a></li>
+            <li><a href="https://www.instagram.com/subhajithy/">Instagram</a></li>
+        </ul>
+    </section>
+</header>
+
+<section id="Projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="project-gallery">
+        <img src="https://cdn.dribbble.com/userupload/4217285/file/original-a72007ef24d1d185081316526d9c3527.png?resize=1504x1128&vertical=center" alt="Job Portal">
+        <img src="https://cdn.dribbble.com/userupload/9000437/file/original-05ce7878ecc282d0bdbc476f002b6087.png?resize=1504x1128&vertical=center" alt="E-Commerce">
+        <img src="https://cdn.dribbble.com/userupload/41968213/file/original-73d4036cc54035e1f544946e28a72535.jpg?resize=800x600&vertical=center" alt="Tic Tac Toe Game">
+    </div>
+</section>
+
+<section id="about-me">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content slide-in">
+        <img src="assets/myown.jpeg" alt="My Picture">
+        <div class="about-details">
+            <div class="about-box">
+                <h3>👨‍🎓 Education</h3>
+                <p>Bachelor in Computer Applications <br>Bengal College of Engineering and Technologies, 2022–2025</p>
+            </div>
+
+            <div class="about-box">
+                <h3>🧑 Who I Am</h3>
+                <p>A passionate full-stack developer focused on building modern web applications. I love solving real-world problems and continuously learning new things.</p>
+            </div>
+
+            <div class="about-box">
+                <h3>💻 Technologies I Know</h3>
+                <ul class="tech-list">
+                    <li>HTML / CSS / JavaScript</li>
+                    <li>React.js, Node.js</li>
+                    <li>MongoDB, MySQL</li>
+                    <li>Git, GitHub, Docker</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <ul class="socials">
+        <li><a href="https://www.linkedin.com/in/subhajit-cmd/">LinkedIn</a></li>
+        <li><a href="https://x.com/subhajit_cmd">X (Twitter)</a></li>
+        <li><a href="https://github.com/subhajit-cmd">GitHub</a></li>
+        <li><a href="https://www.instagram.com/subhajithy/">Instagram</a></li>
+    </ul>
+    <p>&copy; 2025 Subhajit - All Rights Reserved</p>
+</footer>
+
+<script>
+    function viewCV() {
+        window.open('files/your-cv.pdf', '_blank');
+    }
+
+    const toggle = document.getElementById("toggleMode");
+    toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        toggle.textContent = document.body.classList.contains("dark-mode") ? "☀️ Light Mode" : "🌙 Dark Mode";
+    });
+</script>
+
+</body>
+</html>
