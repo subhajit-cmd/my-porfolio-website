@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subhajit's Portfolio Site</title>
+    <title>Subhajit's Portfolio </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
 <header>
       <nav id="NavBar">
     <div class="nav-left">
-      <h1 class="logo">Subh.dev </h1>
+      <h1 class="logo"><a href="#Herosection">Subh.dev</a></h1>
     </div>
 
     <ul class="nav-links">
@@ -29,10 +29,11 @@
         <p class="fade-in">Hello, I am</p>
         <h1 class="slide-in">Subhajit Sarkar</h1>
         <ul class="socials fade-in">
-            <li><a href="https://www.linkedin.com/in/subhajit-cmd/">LinkedIn</a></li>
-            <li><a href="https://x.com/subhajit_cmd">X (Twitter)</a></li>
-            <li><a href="https://github.com/subhajit-cmd">GitHub</a></li>
-            <li><a href="https://www.instagram.com/subhajithy/">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/subhajit-cmd/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://x.com/subhajit_cmd" target="_blank">X (Twitter)</a></li>
+            <li><a href="https://github.com/subhajit-cmd" target="_blank">GitHub</a></li>
+            <li><a href="https://www.instagram.com/subhajithy/" target="_blank">Instagram</a></li>
+            <li class="Gmail"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=subhajitsakar26@gmail.com" target="_blank">Gmail</a></li>
         </ul>
     </section>
 </header>
@@ -53,25 +54,24 @@
         <div class="about-details">
             <div class="about-box">
                 <h3>👨‍🎓 Education</h3>
-                <p><strong>Education</strong></p>
 
 <p><strong>Bachelor of Computer Applications (BCA)</strong><br>
 Bengal College of Engineering and Technology (BCET), Durgapur<br>
 2022 – 2025</p>
 
 <p><strong>Higher Secondary (Class XII)</strong><br>
-MAMC Township Modern School, West Bengal<br>
+M.A.M.C. Township Modern High School (H.S.), West Bengal<br>
 2020 – 2022</p>
 
 <p><strong>Secondary (Class X)</strong><br>
-MAMC Township Modern School, West Bengal<br>
+M.A.M.C. Township Modern High School (H.S.), West Bengal<br>
 2009 – 2020</p>
 
             </div>
 
             <div class="about-box">
                 <h3>🧑 Who I Am</h3>
-                <p>Hi, I'm Subhajit Sarkar, a passionate tech enthusiast and developer from West Bengal, India. I enjoy building functional, user-friendly digital solutions and exploring new technologies that make life easier and more connected.</p>
+                <p>I'm a frontend web developer dedicated to turning ideas into creative solutions. I specialize in creating seamless and intuitive user experiences.<br>My approach focuses on creating scalable, high-performing solutions tailored to both user needs and business objectives. By prioritizing performance, accessibility, and responsiveness, I strive to deliver experiences that not only engage users but also drive tangible results.</p>
             </div>
 
             <div class="about-box">
@@ -80,7 +80,8 @@ MAMC Township Modern School, West Bengal<br>
                     <li>HTML / CSS / JavaScript</li>
                     <li>React.js, Node.js</li>
                     <li>MongoDB, MySQL</li>
-                    <li>Git, GitHub, Docker</li>
+                    <li>Git, GitHub </li>
+                    <li> DSA (Basics) </li>
                 </ul>
             </div>
         </div>
@@ -89,25 +90,16 @@ MAMC Township Modern School, West Bengal<br>
 
 <footer>
     <ul class="socials">
-        <li><a href="https://www.linkedin.com/in/subhajit-cmd/">LinkedIn</a></li>
-        <li><a href="https://x.com/subhajit_cmd">X (Twitter)</a></li>
-        <li><a href="https://github.com/subhajit-cmd">GitHub</a></li>
-        <li><a href="https://www.instagram.com/subhajithy/">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/subhajit-cmd/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://x.com/subhajit_cmd" target="_blank">X (Twitter)</a></li>
+        <li><a href="https://github.com/subhajit-cmd" target="_blank">GitHub</a></li>
+        <li><a href="https://www.instagram.com/subhajithy/" target="_blank">Instagram</a></li>
+        <li class="Gmail"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=subhajitsakar26@gmail.com" target="_blank">Gmail</a></li>
     </ul>
-    <p>&copy; 2025 Subhajit - All Rights Reserved</p>
+    <p>&copy; 2025 Subhajit Sarkar - All Rights Reserved</p>
 </footer>
 
-<script>
-    function viewCV() {
-        window.open('files/your-cv.pdf', '_blank');
-    }
-
-    const toggle = document.getElementById("toggleMode");
-    toggle.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
-        toggle.textContent = document.body.classList.contains("dark-mode") ? "☀️ Light Mode" : "🌙 Dark Mode";
-    });
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
