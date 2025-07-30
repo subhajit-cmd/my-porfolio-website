@@ -1,6 +1,9 @@
+function viewCV() {
+        window.open('files/your-cv.pdf', '_blank');
+    }
 
-  function viewCV() {
-    // Replace with your actual path to the PDF
-    const cvUrl = 'C:\Users\subho\Downloads\Favorites\Downloads\Documents\Desktop\New Me\Project (html+css)\my Porfolio site (HTML+CSS+Js)\assets\Subhajit Sarkar cv.pdf' 
-    window.open(cvUrl, '_blank'); // Opens in new tab
-  }
+    const toggle = document.getElementById("toggleMode");
+    toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        toggle.textContent = document.body.classList.contains("dark-mode") ? "☀️ Light Mode" : "🌙 Dark Mode";
+    });
